@@ -1,6 +1,7 @@
 package web.model;
 
 public class Car {
+
     private String manufacturer;
     private String model;
     private String color;
@@ -40,7 +41,7 @@ public class Car {
     @Override
     public String toString() {
         return "\nCar{" +
-                "manufacturer='" + manufacturer + '\'' +
+                ", manufacturer='" + manufacturer + '\'' +
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 '}';

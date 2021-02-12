@@ -6,10 +6,23 @@
     <title>CarList</title>
 </head>
 <body>
-<div>
-    <th:block th:each="car : ${cars}">
-        <h1 th:text="${car}"></h1>
-    </th:block>
-</div>
+<center>
+
+    <table border="1" bordercolor="#808080" cellspacing="0" cellpadding="5">
+        <tr>
+            <th>manufacturer</th>
+            <th>model</th>
+            <th>color</th>
+        </tr>
+        <tr th:each="car : ${cars}">
+            <td th:text="${car.getManufacturer()}">manufacturer</td>
+            <td th:text="${car.getModel()}">model</td>
+            <td th:text="${car.getColor()}">color</td>
+        <tr>
+
+        </tr>
+    </table>
+
+</center>
 </body>
 </html>
